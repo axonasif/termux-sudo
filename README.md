@@ -22,7 +22,7 @@ SUDO WILL NOT WORK WITHOUT SU
 5. Execute the following commands to place sudo into the correct directory with the proper permissions and ownership
 
 ```
-cat sudo > /data/data/com.termux/files/usr/bin/sudo
+ln -s $(pwd)/sudo /data/data/com.termux/files/usr/bin/sudo
 chmod 700 /data/data/com.termux/files/usr/bin/sudo
 ```
 
